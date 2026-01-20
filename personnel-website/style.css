@@ -1,0 +1,316 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --link-color: #000;
+    --accent-color: #e0e0e0;
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
+    --sidebar-width: 350px;
+    --container-max-width: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-serif);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    padding: 2rem;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image-container {
+    margin-bottom: 2rem;
+    /* Simulate the stipple placeholder style if needed, 
+       but standard image for now */
+    filter: grayscale(100%) contrast(1.2);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* Optional: circle or keeping it square like reference */
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.background-name {
+    font-family: var(--font-sans);
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.1);
+    /* Watermark effect */
+    margin: 0 0 2rem 0;
+    word-break: break-word;
+}
+
+.recent-posts h2 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 0.8rem;
+}
+
+.recent-posts a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.recent-posts a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 4rem;
+    max-width: 800px;
+    /* Readability limit */
+}
+
+.intro {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+.intro .lead {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Newsletter */
+.newsletter-box {
+    background-color: #fff;
+    padding: 2rem;
+    border: 2px solid #000;
+    margin-bottom: 4rem;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-box h2 {
+    font-family: var(--font-sans);
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    font-family: var(--font-sans);
+}
+
+.newsletter-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: var(--font-sans);
+}
+
+.newsletter-form button:hover {
+    background-color: #333;
+}
+
+/* Popular Posts */
+.popular-posts h2 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.post-item {
+    margin-bottom: 2.5rem;
+}
+
+.post-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.post-item h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.post-item h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 4rem 0;
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+}
+
+.footer-content {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.featured-in {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    opacity: 0.5;
+}
+
+.logo-placeholder {
+    font-weight: bold;
+    font-family: var(--font-sans);
+    border: 1px dashed #999;
+    padding: 0.5rem;
+}
+
+.on-the-web h3 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.social-links {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-sans);
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .profile-image-container {
+        margin-bottom: 0;
+    }
+
+    .background-name {
+        display: none;
+        /* Hide large watermark on mobile */
+    }
+
+    .sidebar-content {
+        flex: 1;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recent-posts {
+        display: none;
+        /* Often hidden on mobile headers to save space, or moved */
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
