@@ -32,4 +32,3 @@ Contributions, ideas, and feedback are welcome!
 Feel free to open issues, submit pull requests, or share your own coding vibes.
 
 ---
-
