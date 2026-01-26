@@ -1,5 +1,4 @@
 # Amit Thakur — Personal Portfolio
-
 Minimal, Apple-inspired personal portfolio built with HTML, CSS, and minimal JavaScript. Designed to present a calm, premium, and focused professional profile for Amit Thakur.
 
 **Contents**
@@ -9,7 +8,6 @@ Minimal, Apple-inspired personal portfolio built with HTML, CSS, and minimal Jav
 - `assets/` — Lightweight SVG visuals and placeholders
 
 **Quick Start**
-
 1. Open the site locally: double-click `index.html` or serve it with a simple static server.
 
 Using Python (recommended):
