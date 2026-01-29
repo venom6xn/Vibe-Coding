@@ -24,8 +24,6 @@ This repository is all about experimenting, learning, and building projects that
 - **Focus Areas:** AI & ML, creative coding, problem-solving  
 - **Tools:** GitHub Actions, VS Code, GitHub
 
----
-
 ## 🤝 Contributing
 Contributions, ideas, and feedback are welcome!
 Feel free to open issues, submit pull requests, or share your own coding vibes.
