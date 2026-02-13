@@ -424,6 +424,7 @@ a:hover {
         padding: 24px;
     }
 
+    
     .work-item {
         grid-template-columns: 1fr;
         gap: 40px;
