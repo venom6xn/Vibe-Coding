@@ -2,7 +2,6 @@
 Welcome to **Vibe-Coding** — a space where creativity meets code.  
 
 This repository is all about experimenting, learning, and building projects that carry both technical depth and personal flair.
-
 ---
 
 ## 🚀 Features
