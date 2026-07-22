@@ -5,6 +5,7 @@ Minimal, Apple-inspired personal portfolio built with HTML, CSS, and minimal Jav
 - `styles.css` — Visual styling (Apple-like spacing and typography)
 - `script.js` — Small interactions: smooth scroll, active nav, subtle fades
 - `assets/` — Lightweight SVG visuals and placeholders
+
 - 
 **Quick Start**
 1. Open the site locally: double-click `index.html` or serve it with a simple static server.
